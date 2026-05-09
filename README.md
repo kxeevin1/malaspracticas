@@ -5,44 +5,30 @@ Errores de diseño
 
 * La clase `Parqueadero` tiene demasiadas responsabilidades.
 * Hay mucho acoplamiento entre lógica, interfaz y archivos.
-* `registrar_entrada()` y `registrar_salida()` mezclan lógica con consola usando `input()` y `print()`.
-* `main()` tiene demasiada lógica centralizada.
+* `registrar_entrada()` y `registrar_salida()` mezclan lógica con consola.
 * Falta separación por capas.
-* El sistema depende mucho del estado interno de la clase.
-* El historial de vehículos está muy simple y poco modelado.
-* Las búsquedas recorren listas completas todo el tiempo.
-* El manejo de archivos está demasiado unido a la lógica principal.
-* El `.txt` funciona como una base de datos improvisada.
-* La persistencia es frágil porque depende totalmente del formato manual del archivo.
+* `main()` tiene demasiada lógica centralizada.
 * La programación orientada a objetos está usada más como contenedor de datos.
-* Hay poco encapsulamiento.
 
 Reutilización
 
-* Hay código repetido en las validaciones.
-* El patrón de pedir-validar-repetir aparece muchas veces.
-* Hay repetición en carga y guardado de datos.
-* El parseo del archivo se hace manualmente varias veces.
-* La comparación de matrículas usando `upper()` se repite demasiado.
-* Varias validaciones podrían reutilizar funciones auxiliares.
-* Hay lógica repetitiva en el manejo de fechas.
-* Hay poca modularidad en general.
-
-Errores o malas prácticas
-
-* Hay `int(input())` sin manejo de errores.
-* El programa puede romperse si el usuario escribe letras.
-* Las listas internas se modifican directamente.
-* Hay dependencia excesiva de consola.
-* El código sería difícil de escalar.
-* Muchas partes dependen entre sí.
-* Los vehículos estacionados no se restauran correctamente al reiniciar.
-* El código sería difícil de mantener si el proyecto creciera.
+* Hay código repetido en validaciones.
+* El patrón pedir-validar-repetir aparece muchas veces.
+* La carga y guardado de datos repite lógica.
+* Varias funciones podrían reutilizar auxiliares comunes.
 
 Patrones que podrían aplicarse
 
-* MVC para separar modelo, vista y lógica.
+* MVC para separar lógica, interfaz y datos.
 * Repository o DAO para separar persistencia.
-* Strategy para el cálculo de tarifas.
-* Factory para centralizar la creación de vehículos.
-* Command para organizar el menú y evitar tantos `if/elif`.
+* Strategy para manejar tarifas según el tipo de vehículo.
+* Factory para centralizar creación de vehículos.
+* Command para organizar mejor el menú.
+
+Otras malas prácticas
+
+* Hay `int(input())` sin manejo de errores.
+* Las listas internas se modifican directamente.
+* Hay mucha dependencia de consola.
+* El sistema sería difícil de escalar o mantener si creciera.
+
