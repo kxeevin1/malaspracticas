@@ -3,12 +3,11 @@ Kevin Jhoan Carreño Patiño 20242020308 - Daniel Felipe Santamaria Duran 202420
 
 Errores de diseño
 
-* La clase `Parqueadero` tiene demasiadas responsabilidades.
+* La clase Parqueadero tiene demasiadas responsabilidades.
 * Hay mucho acoplamiento entre lógica, interfaz y archivos.
-* `registrar_entrada()` y `registrar_salida()` mezclan lógica con consola.
 * Falta separación por capas.
-* `main()` tiene demasiada lógica centralizada.
-* La programación orientada a objetos está usada más como contenedor de datos.
+* Hay `int(input())` sin manejo de errores.
+* El sistema sería difícil de escalar o mantener si creciera.
 
 Reutilización
 
@@ -24,11 +23,4 @@ Patrones que podrían aplicarse
 * Strategy para manejar tarifas según el tipo de vehículo.
 * Factory para centralizar creación de vehículos.
 * Command para organizar mejor el menú.
-
-Otras malas prácticas
-
-* Hay `int(input())` sin manejo de errores.
-* Las listas internas se modifican directamente.
-* Hay mucha dependencia de consola.
-* El sistema sería difícil de escalar o mantener si creciera.
 
