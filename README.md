@@ -1,136 +1,48 @@
 # Identificar malas prácticas en un proyecto antiguo
 Kevin Jhoan Carreño Patiño 20242020308 - Daniel Felipe Santamaria Duran 20242020023
 
-# Problemas de diseño
+Errores de diseño
 
-## Clase `Parqueadero`
+* La clase `Parqueadero` tiene demasiadas responsabilidades.
+* Hay mucho acoplamiento entre lógica, interfaz y archivos.
+* `registrar_entrada()` y `registrar_salida()` mezclan lógica con consola usando `input()` y `print()`.
+* `main()` tiene demasiada lógica centralizada.
+* Falta separación por capas.
+* El sistema depende mucho del estado interno de la clase.
+* El historial de vehículos está muy simple y poco modelado.
+* Las búsquedas recorren listas completas todo el tiempo.
+* El manejo de archivos está demasiado unido a la lógica principal.
+* El `.txt` funciona como una base de datos improvisada.
+* La persistencia es frágil porque depende totalmente del formato manual del archivo.
+* La programación orientada a objetos está usada más como contenedor de datos.
+* Hay poco encapsulamiento.
 
-* Tiene demasiadas responsabilidades.
-* Hay alto acoplamiento.
-* Falta separación de responsabilidades.
+Reutilización
 
-## Métodos `registrar_entrada()` y `registrar_salida()`
+* Hay código repetido en las validaciones.
+* El patrón de pedir-validar-repetir aparece muchas veces.
+* Hay repetición en carga y guardado de datos.
+* El parseo del archivo se hace manualmente varias veces.
+* La comparación de matrículas usando `upper()` se repite demasiado.
+* Varias validaciones podrían reutilizar funciones auxiliares.
+* Hay lógica repetitiva en el manejo de fechas.
+* Hay poca modularidad en general.
 
-* Mezclan lógica con interfaz.
-* Dependencia directa de consola (`input` y `print`).
+Errores o malas prácticas
 
-## `main()`
+* Hay `int(input())` sin manejo de errores.
+* El programa puede romperse si el usuario escribe letras.
+* Las listas internas se modifican directamente.
+* Hay dependencia excesiva de consola.
+* El código sería difícil de escalar.
+* Muchas partes dependen entre sí.
+* Los vehículos estacionados no se restauran correctamente al reiniciar.
+* El código sería difícil de mantener si el proyecto creciera.
 
-* Mucha lógica centralizada.
-* Menú muy acoplado al sistema.
+Patrones que podrían aplicarse
 
----
-
-# Problemas de reutilización
-
-## Validaciones
-
-* Código repetido.
-* Baja reutilización.
-
-## Manejo de fechas
-
-* Lógica repetitiva.
-* Validaciones reutilizables no abstraídas.
-
-## Guardado y carga de datos
-
-* Repetición de parseo.
-* Repetición de construcción de objetos.
-
-## Comparaciones de matrículas
-
-* Normalización repetida (`upper()` varias veces).
-
----
-
-# Problemas de estructura
-
-## Listas `vehiculos` e `historial_vehiculos`
-
-* Uso excesivo de estado mutable.
-* Modificación directa de estructuras internas.
-
-## Búsquedas
-
-* Complejidad lineal innecesaria.
-* Poco escalable.
-
-## Historial
-
-* Modelo de historial limitado.
-* Persistencia poco robusta.
-
-## Archivo `.txt`
-
-* Persistencia frágil.
-* Dependencia de formato manual.
-
----
-
-# Problemas de programación orientada a objetos
-
-## Clase `Vehiculo`
-
-* Se usa más como contenedor de datos.
-
-## Clase `Usuario`
-
-* Poco comportamiento encapsulado.
-
-## Encapsulamiento
-
-* Bajo encapsulamiento general.
-* Acceso directo a atributos.
-
----
-
-# Patrones que podrían aplicarse
-
-## MVC
-
-* Falta separación entre:
-
-  * modelo,
-  * vista,
-  * controlador.
-
-## Repository / DAO
-
-* Persistencia mezclada con lógica.
-
-## Strategy
-
-* Tarifas dependientes del tipo de vehículo.
-
-## Factory
-
-* Creación de objetos centralizable.
-
-## Command
-
-* Menú dependiente de muchos `if/elif`.
-
----
-
-# Otros errores o malas prácticas
-
-## Manejo de errores
-
-* `int(input())` sin validaciones completas.
-
-## Acoplamiento
-
-* Muchas funciones dependen entre sí.
-
-## Escalabilidad
-
-* Diseño poco mantenible a largo plazo.
-
-## Persistencia
-
-* Vehículos actuales no se restauran correctamente.
-
-## Dependencia de consola
-
-* Sistema difícil de reutilizar fuera de terminal.
+* MVC para separar modelo, vista y lógica.
+* Repository o DAO para separar persistencia.
+* Strategy para el cálculo de tarifas.
+* Factory para centralizar la creación de vehículos.
+* Command para organizar el menú y evitar tantos `if/elif`.
