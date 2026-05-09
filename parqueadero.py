@@ -1,6 +1,6 @@
 """
 Programa: parqueadero
-Autores: Daniel Felipe Santamaria y Jhosthynn Alexander Sarmiento
+Autores: Daniel Felipe Santamaria y Jhosthynn Alexander Sarmiento (era con un compañero anterior en básica)
 Fecha: 28 enero 2025.
 """
 
