@@ -1,5 +1,6 @@
 # Identificar malas prácticas en un proyecto antiguo
 Kevin Jhoan Carreño Patiño 20242020308 - Daniel Felipe Santamaria Duran 20242020023
+
 El proyecto era un parqueadero que se realizó para la materia de programación básica, es de daniel con otro compañero.
 
 Errores de diseño
