@@ -8,6 +8,7 @@ Errores de diseño
 * Falta separación por capas
 * Hay mucho int(input()) sin manejo de errores
 * El sistema sería difícil de escalar o mantener si creciera
+
 Reutilización
 
 * Hay código repetido en validaciones, puede ser el antipatron de copy-paste programming
