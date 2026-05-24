@@ -1,5 +1,9 @@
 # SonarQube
-<img width="1171" height="218" alt="image" src="https://github.com/user-attachments/assets/596c7085-9c0e-4975-a907-eb1bc1f1f188" />
+<img width="1562" height="884" alt="image" src="https://github.com/user-attachments/assets/74c8e957-1c40-4e91-bedc-cd3e97dd660c" />
+SonarQube no identificó ningun problema en nuestro proyecto de parqueadero
+Lo único es que nos dió una advertencia sobre que teniamos las 3 versiones de python y sería más preciso cambiándolo.
+<img width="1673" height="863" alt="image" src="https://github.com/user-attachments/assets/6eff2e7a-23fd-40e2-9777-18e26c9d5716" />
+
 
 
 # Identificar malas prácticas en un proyecto antiguo
