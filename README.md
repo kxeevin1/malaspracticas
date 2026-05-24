@@ -4,7 +4,11 @@ SonarQube no identificó ningun problema en nuestro proyecto de parqueadero, sal
  
  
  0.0% Duplicación de código
+ 
+ 
  0 errores encontrados
+ 
+ 
  100% hospots revisados y aprobados
 
  
