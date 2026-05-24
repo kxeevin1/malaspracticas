@@ -1,4 +1,5 @@
 # SonarQube
+Kevin Jhoan Carreño Patiño 20242020308 - Daniel Felipe Santamaria Duran 20242020023
 <img width="1562" height="884" alt="image" src="https://github.com/user-attachments/assets/74c8e957-1c40-4e91-bedc-cd3e97dd660c" />
 SonarQube no identificó ningun problema en nuestro proyecto de parqueadero, salió con:
  
