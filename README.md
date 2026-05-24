@@ -1,3 +1,7 @@
+# SonarQube
+<img width="1171" height="218" alt="image" src="https://github.com/user-attachments/assets/596c7085-9c0e-4975-a907-eb1bc1f1f188" />
+
+
 # Identificar malas prácticas en un proyecto antiguo
 Kevin Jhoan Carreño Patiño 20242020308 - Daniel Felipe Santamaria Duran 20242020023
 
