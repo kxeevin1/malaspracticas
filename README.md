@@ -1,6 +1,11 @@
 # SonarQube
 <img width="1562" height="884" alt="image" src="https://github.com/user-attachments/assets/74c8e957-1c40-4e91-bedc-cd3e97dd660c" />
-SonarQube no identificó ningun problema en nuestro proyecto de parqueadero
+SonarQube no identificó ningun problema en nuestro proyecto de parqueadero, salió con:
+ 0.0% Duplicación de código
+ 0 errores encontrados
+ 100% hospots revisados y aprobados
+
+ 
 Lo único es que nos dió una advertencia sobre que teniamos las 3 versiones de python y sería más preciso cambiándolo.
 <img width="1673" height="863" alt="image" src="https://github.com/user-attachments/assets/6eff2e7a-23fd-40e2-9777-18e26c9d5716" />
 
